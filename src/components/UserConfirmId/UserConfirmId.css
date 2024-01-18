@@ -1,0 +1,20 @@
+.confirmdId_container {
+    background-color: var(--colorFondo);
+    height: 100vh;
+    margin-top: 150px;
+}
+
+.confirmId_title {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.confirmId_sub_title {
+    margin-top: 40px;
+}
+
+.confirmId_title_id {
+    margin: 1rem;
+    font-size: 2rem;
+}

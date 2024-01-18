@@ -1,0 +1,112 @@
+.navbar_container {
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding: 10px;
+    align-items: center;
+    transition: all 1s linear;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar_items a {
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.navbar_center_text {
+    margin-top: -10px;
+}
+
+.navbar_title h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.navbar_title h6 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.navbar_cart {
+    font-size: 3rem;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.navbar_toggle {
+    display: none;
+}
+
+@media (max-width: 988px) {
+    .navbar_items {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: rgb(6, 0, 0);
+        opacity: 0.8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        width: 100%;
+        height: 100vh;
+        transition: 1s ease all;
+        transform: translateX(-100%);
+    }
+    /* Ojo que clase de clase se escribe todo junto */
+    .navbar_items.open {
+        transform: translateX(0) !important;
+    }
+
+    .navbar_title h1 {
+        font-size: 2rem;
+    }
+
+    .navbar_items a {
+        font-size: 2rem;
+        margin: 2rem;
+        transition: 1s ease all;
+    }
+
+    .navbar_items a:hover {
+        font-size: 2.5rem;
+        transition: 1s ease all;
+    }
+
+    .navbar_toggle {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .navbar_toggle span {
+        width: 35px;
+        height: 4px;
+        background-color: white;
+        margin-bottom: 5px;
+        border-radius: 30%;
+        transform-origin: 5px 0px;
+        transition: all 1s linear;
+    }
+
+    .navbar_toggle.open > span {
+        transform: rotate(-45deg) translate(5px, 2px);
+        border-radius: 5px;
+    }
+
+    .navbar_toggle.open > span:nth-child(2) {
+        transform: rotate(-45deg) translate(-15px, 1px);
+    }
+
+    .navbar_toggle.open > span:nth-child(3) {
+        transform: rotate(-45deg) translate(-35px, 1px);
+    }
+}

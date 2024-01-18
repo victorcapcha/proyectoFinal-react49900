@@ -1,0 +1,21 @@
+:root {
+    --colorFondo: rgba(143, 234, 113, 0.45);
+    --colorFondo_items_cart: rgba(22, 71, 6, 0.95);
+}
+
+/*Los estilos de acá afectan a toda la SPA y no solo un componente*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.spinner_position {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

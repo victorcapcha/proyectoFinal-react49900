@@ -1,0 +1,27 @@
+.cart_item_total {
+    background-color: var(--colorFondo_items_cart);
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 15px;
+    right: 33px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    animation: scale 1s ease-in-out;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
